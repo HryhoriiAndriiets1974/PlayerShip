@@ -35,12 +35,14 @@ def update():
 def draw():
     screen.fill((80,0,70))
     if game_over:
+      screen.draw.text('Ліцей "ОСНОВА" клас -- учень --- рік ---', (150,10), color=(255,255,255), fontsize=30)
       screen.draw.text('Game Over', (360, 300), color=(255,255,255), fontsize=60)
       screen.draw.text('Score: ' + str(score), (360, 350), color=(255,255,255), fontsize=60)
     else:
       gem.draw()
       ship.draw()
       screen.draw.text('Score: ' + str(score), (15,10), color=(255,255,255), fontsize=30)
+      screen.draw.text('Ліцей "ОСНОВА" клас -- учень --- рік ---', (150,10), color=(255,255,255), fontsize=30)
     
 
 pgzrun.go() # Must be last line
